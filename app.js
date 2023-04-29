@@ -1,26 +1,17 @@
-const heading = React.createElement(
-  "h1",
-  { id: "heading1" }, //attribute  which comes inside props
-  "Hello world from react"
-); //children which comes inside props
+// import React from 'react';
+// import ReactDOM from 'react-dom/client'
+const parent = React.createElement("div", {id: 'parent'},[
+  React.createElement("div", {id:'child'}, [
+    React.createElement('h1', {}, "This h1 tag"),
+    React.createElement('h2', {}, "This is h2 tag"),
+  ]),
+  React.createElement("div", {id: 'child2'},[
+    React.createElement("h1", {}, "This is h1 tag"),
+    React.createElement("h2",{}, "This is h2 tag"),
+  ])
+])
 
-console.log(heading); //object
+console.log(parent);
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
-
-const parent = React.createElement(
-  "div",
- [ { id: "parent" },
- React.createElement(
-   "div",
-   { id: "child1" },
-   [React.createElement("h1", {}, "I am a h1 tag"), React.createElement("h2", {}, "I am a h2 tag")]
- ),
- { id: "parent" },
-  React.createElement(
-    "div",
-    { id: "child2" },
-    [React.createElement("h1", {}, "I am a h1 tag"), React.createElement("h2", {}, "I am a h2 tag")]
-  )]
-);
-console.log(parent)
 root.render(parent);

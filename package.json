@@ -1,0 +1,27 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "React app by Shweta",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kawarshweta/React-projects.git"
+  },
+  "keywords": [
+    "React"
+  ],
+  "author": "Shweta Kawar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kawarshweta/React-projects/issues"
+  },
+  "homepage": "https://github.com/kawarshweta/React-projects#readme",
+  "devDependencies": {
+    "parcel": "^2.8.3"
+  },
+  "browserslist":[
+    "latest 2 versions"
+  ]
+}
